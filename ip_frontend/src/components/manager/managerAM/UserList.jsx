@@ -304,12 +304,17 @@ const UserList = () => {
 
   useEffect(() => {
     load(page);
-  }, [page]);
+  }, [search,page]);
+
+  // 🔧 reset to page 1 whenever search text changes
+useEffect(() => {
+  setPage(1);
+}, [search]);
 
   const load = async (pageNum = 1) => {
     setLoading(true);
     try {
-      const res = await api.getUsers(`?role=member&page=${pageNum}&limit=${limit}`);
+      const res = await api.getUsers(`?role=member&page=${pageNum}&limit=${limit}&search=${search}`);
       const data = res.data || res;
       setUsers(data.users || []);
       setTotalPages(data.totalPages || 1);
@@ -319,11 +324,7 @@ const UserList = () => {
     setLoading(false);
   };
 
-  const filtered = users.filter(
-    (u) =>
-      u.name?.toLowerCase().includes(search.toLowerCase()) ||
-      u.email?.toLowerCase().includes(search.toLowerCase())
-  );
+  const filtered = users;
 
   return (
     <div className={styles.wrap}>

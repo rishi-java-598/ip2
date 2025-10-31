@@ -20,6 +20,9 @@ const UserList = () => {
   useEffect(() => {
     load(page);
   }, [page]);
+useEffect(() => {
+  setPage(1);
+}, [search]);
 
   const load = async (pageNum = 1) => {
     setLoading(true);
@@ -36,11 +39,7 @@ const UserList = () => {
     setLoading(false);
   };
 
-  const filtered = users.filter(
-    (u) =>
-      u.name?.toLowerCase().includes(search.toLowerCase()) ||
-      u.email?.toLowerCase().includes(search.toLowerCase())
-  );
+  const filtered = users;
 // console.log(selectedUser);
 
   return (

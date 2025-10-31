@@ -874,7 +874,20 @@ const MarkAttendance = () => {
   }
 
   }
+  const removePrioredit = (m) =>{
+    const unsavedMembers = markedToday.filter(m => !m._id);
+  if (unsavedMembers.length > 0) {
+    setModalMessage('Save unmarked users first');
+    setModal("alert")
+    return;
+  }
+  else{
 
+    setModal("edit")
+    setSelectedEditUSer(m)
+  }
+
+  }
 
   const handleRemove = async member => {
   // Check for unsaved members before allowing delete
@@ -1001,8 +1014,10 @@ return;
                 <div className={styles.actions}>
                   <button className={styles.editBTN} 
                   // onClick={() => handleUpdateSlot(m)}
-                  onClick={() =>{ setModal("edit")
-                    setSelectedEditUSer(m)
+                  onClick={() =>{ 
+                    // setModal("edit")
+                    // setSelectedEditUSer(m)
+                    removePrioredit(m);
                   }}
                   
                   >

@@ -619,9 +619,12 @@ const AdminUserManagement = () => {
                   }
                 >
                   <option value="">Select Membership</option>
+                                    <option value="Bronze">Bronze</option>
+
                   <option value="Gold">Gold</option>
                   <option value="Silver">Silver</option>
                   <option value="Platinum">Platinum</option>
+
                 </select>
 
                 <select
@@ -736,7 +739,7 @@ backgroundColor:
   selectedUser?.membership?.type === "Silver" ? "#ddddddff" :
   selectedUser?.membership?.type === "Platinum" ? "#ea9df7" :
   selectedUser?.membership?.type === "Gold" ? "#d8aa00ff" :
-  selectedUser?.membership?.type === "Bronze" ? "#eb9737ff" :
+  selectedUser?.membership?.type === "Bronze" ? "#7e3f03" :
   "white",
                 borderRadius: "10px",
               }}
@@ -857,9 +860,12 @@ backgroundColor:
                   }
                 >
                   <option value="">Select Membership</option>
+                                                      <option value="Bronze">Bronze</option>
+
                   <option value="Gold">Gold</option>
                   <option value="Silver">Silver</option>
                   <option value="Platinum">Platinum</option>
+
                 </select>
 
                 <label>Validity Start</label>

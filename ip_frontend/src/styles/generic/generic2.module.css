@@ -781,13 +781,26 @@ gap:20px;
 }
 
 .navLink {
-  text-decoration: none;
+  /* text-decoration: none;
   color: #000;
-  /* font-weight: 600; */
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: black;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 1.5px solid black;
+  border-radius: 26px;
+  box-shadow: inset 0 0 0 0 black;
 }
 
 /* .navLink::after {
@@ -802,7 +815,9 @@ gap:20px;
 } */
 
 .navLink:hover {
-  color: #ff914d;
+  /* color: #ff914d; */
+   color: white;
+  box-shadow: inset 0 -100px 0 0 black;
 }
 
 .navLink:hover::after {
@@ -824,7 +839,7 @@ gap:20px;
   display: flex;
   align-items: center;
   gap: 5px;
-  transition: color 0.3s ease;
+  /* transition: color 0.3s ease; */
 
 
 
@@ -838,11 +853,12 @@ gap:20px;
     border-radius: 25px;
     font-size: 1rem;
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .dropBtn:hover {
-  color: #ff914d;
+  color: white;
+  box-shadow: inset 0 -100px 0 0 black;
 }
 
 .arrow {

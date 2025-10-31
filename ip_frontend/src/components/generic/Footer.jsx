@@ -58,7 +58,7 @@ Address - VIT BHOPAL
         </div>
 
         <div className={styles.wholeindiv}>
-          <h2 style={{ marginBottom: "20px", textAlign: "center" }}>
+          {/* <h2 style={{ marginBottom: "20px", textAlign: "center" }}>
             Quick Links
           </h2>
 
@@ -72,13 +72,37 @@ Address - VIT BHOPAL
             <Link className={styles.flink} to="/accounts">
               Gym Staff
             </Link>
-            <Link className={styles.flink} to="/budgets">
+            <Link className={styles.flink} to="/register">
               Register
             </Link>
             <Link className={styles.flink} to="/userProfile">
               Profile
             </Link>
+          </div> */}
+          <h2 style={{ marginBottom: "20px", textAlign: "center" }}>
+            Our Features
+          </h2>
+
+          <div className={styles.centerContainer}>
+            <p className={styles.flink} to="/">
+              🏋️ State-of-the-art Weight Training Area
+            </p>
+            <p className={styles.flink} to="/about">
+              🚴 Cardio & Endurance Zone
+            </p>
+            <p className={styles.flink} to="/accounts">
+              🧘 Yoga & Mobility Studio
+            </p>
+            <p className={styles.flink} to="/register">
+              🥗 Nutrition & Wellness Coaching
+            </p>
+            <p className={styles.flink} to="/userProfile">
+              👊 Personal Training Programs
+            </p>
           </div>
+              <div className="footer-features">
+      
+    </div>
         </div>
       </div>
 
@@ -122,7 +146,7 @@ mail : expo.tracey@gmail.com</h3>
 
       <div className={styles["footer-bottom"]}>
         <p style={{ textAlign: "center" }}>
-          &copy; 2025 The Iron Paradise, Inc. All rights reserved.
+          Copyright © {new Date().getFullYear()} All rights reserved | <span style={{color:"orange"}}>ऋषि राज शर्मा</span> और <span style={{color:"#86f386"}}>अफ़ज़ल अली</span>    द्वारा रचित और विकसित |
         </p>
       </div>
     </footer>

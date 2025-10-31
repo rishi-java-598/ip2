@@ -19,7 +19,7 @@ const UserList = () => {
 
   useEffect(() => {
     load(page);
-  }, [page]);
+  }, [page,search]);
 useEffect(() => {
   setPage(1);
 }, [search]);
@@ -27,11 +27,10 @@ useEffect(() => {
   const load = async (pageNum = 1) => {
     setLoading(true);
     try {
-      const res = await api.getUsers(`?role=member&page=${pageNum}&limit=${limit}&status=registered`);
+      const res = await api.getUsers(`?role=member&page=${pageNum}&limit=${limit}&status=registered&search=${search}`);
       const data = res.data || res;
       setUsers(data.users || []);
-      // console.log(data.users);
-      
+      // console.log(data.users);    
       setTotalPages(data.totalPages || 1);
     } catch (err) {
       console.error(err);

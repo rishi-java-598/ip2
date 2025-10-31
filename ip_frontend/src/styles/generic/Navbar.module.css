@@ -162,7 +162,15 @@ body {
   border-radius: 10px;
   transition: all 0.3s ease 0s;
 }
-.sidebar-links li:hover {
+.sidebar-links li a{
+  text-decoration: none;
+  color: white;
+  padding:6px 10px;
+  /* border:solid 2px white; */
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+}
+.sidebar-links li a:hover {
   background-color: #10c57d;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;

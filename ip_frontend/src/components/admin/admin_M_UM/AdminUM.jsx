@@ -739,7 +739,7 @@ backgroundColor:
   selectedUser?.membership?.type === "Silver" ? "#ddddddff" :
   selectedUser?.membership?.type === "Platinum" ? "#ea9df7" :
   selectedUser?.membership?.type === "Gold" ? "#d8aa00ff" :
-  selectedUser?.membership?.type === "Bronze" ? "#7e3f03" :
+  selectedUser?.membership?.type === "Bronze" ? "#fbb879ff" :
   "white",
                 borderRadius: "10px",
               }}

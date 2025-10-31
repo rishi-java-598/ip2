@@ -512,7 +512,7 @@ const MemberPI = () => {
                 marginTop: "4px",
                 // backgroundColor: "#d8aa00ff",
                 // backgroundColor: "#ea9df7",
-                backgroundColor: (profile.membership.type==="silver")?"#ddddddff":profile.membership.type==="platinum"?"#ea9df7": "#d8aa00ff",
+                backgroundColor: (profile.membership.type==="silver")?"#ddddddff":profile.membership.type==="platinum"?"#ea9df7": profile.membership.type==="gold"?"#d8aa00ff":"#fbb879ff",
                 borderRadius: "10px",
               }}
             />

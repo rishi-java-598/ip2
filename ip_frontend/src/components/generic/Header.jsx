@@ -220,7 +220,10 @@ export default function Header() {
             }}
             className={styles.centerNav}
           >
-            <Link to="/" className={styles.navLink}>
+            <Link to="/" 
+            className={styles.navLink}
+            // className={styles.signupBtn}
+            >
               Home
             </Link>
 

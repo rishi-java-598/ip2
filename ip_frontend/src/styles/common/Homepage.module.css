@@ -1,0 +1,164 @@
+/* .home {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+} */
+
+/* Hero Section */
+.hero {
+  background: url("https://images.unsplash.com/photo-1594737625785-caf1402d6f97")
+    center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+}
+.cta {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.cta:hover {
+  background: #e63e3e;
+}
+
+/* Services */
+.services {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.icon {
+  font-size: 2rem;
+}
+
+/* About */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+.about img {
+  width: 100%;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Pricing */
+.pricing {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.priceGrid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.priceCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+.priceCard button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Trainers */
+.trainers {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.trainerGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.trainerCard {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+.trainerCard img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.testimonialCard {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-style: italic;
+}
+
+/* Contact */
+.contact {
+  padding: 3rem 1rem;
+  background: #ff4d4d;
+  color: white;
+  text-align: center;
+}
+.contact button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: white;
+  color: #ff4d4d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

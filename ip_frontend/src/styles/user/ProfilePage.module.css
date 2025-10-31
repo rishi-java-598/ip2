@@ -1,0 +1,10 @@
+/* components/user/ProfilePage.module.css */
+.profile {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.info p {
+  margin: 8px 0;
+}

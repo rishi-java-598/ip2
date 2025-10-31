@@ -1,0 +1,43 @@
+/* .app-container {
+  font-family: Arial, sans-serif;
+}
+
+.main-layout {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.actions-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+} */
+/* .app-container {
+  font-family: Arial, sans-serif;
+} */
+
+.main-layout {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+}

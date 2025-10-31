@@ -1,0 +1,34 @@
+src/
+  components/
+    shared/
+      Navbar.jsx
+      Sidebar.jsx
+      ProtectedRoute.jsx
+      StatsCard.jsx
+      AttendanceTable.jsx
+      UserCard.jsx
+      FilterBar.jsx
+      ExportButton.jsx
+      ConfirmDialog.jsx
+
+    user/
+      UserDashboard.jsx
+      ProfilePage.jsx
+      MembershipDetails.jsx
+      AttendanceHistory.jsx
+      RegistrationForm.jsx
+
+    manager/
+      ManagerDashboard.jsx
+      ApproveRegistration.jsx
+      UserManagement.jsx
+      AttendanceMarking.jsx
+      AttendanceSummary.jsx
+      UserAttendanceView.jsx
+      AllUsersList.jsx
+
+    admin/
+      AdminDashboard.jsx
+      AdminUserManagement.jsx
+      AttendanceDataView.jsx
+      MembershipControl.jsx

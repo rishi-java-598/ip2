@@ -1,0 +1,37 @@
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+  }
+}
+
+.navItem {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.navItem:hover {
+  background: #3b3b3b;
+  color: white;
+}
+
+.active {
+  background: #2a2b2d;
+  color: white;
+  border-color: #5b5b5b;
+  box-shadow: 0 2px 6px rgba(5, 42, 122, 0.4);
+}

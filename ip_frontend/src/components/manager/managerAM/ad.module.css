@@ -1,0 +1,142 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.slotSearch{
+  padding: 6px;
+}
+
+
+.modal {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 95%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #333;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.slotGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.slotCard {
+  padding: 12px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.slotNum {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.count {
+  color: #374151;
+}
+
+.memberList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.memberRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.5fr 1fr;
+  gap: 8px;
+  padding: 10px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.type {
+  color: #6b7280;
+}
+
+.slot {
+  font-weight: bold;
+  color: #000000;
+}
+
+.uid {
+  color: #4b5563;
+}
+
+.markedBy {
+  font-size: 12px;
+  color: #9ca3af;
+}
+#slotSelect{
+                border-radius: 6px;
+                padding: 6px;
+                margin-left: 10px;
+                border: 1px solid #0000002e;
+}
+
+.controls{
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  .memberRow {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 6px;
+  }
+  .type, .slot, .uid {
+    font-size: 12px;
+  }
+  .slotSearch{
+  padding: 6px;
+  width: 100%;
+}
+  #slotSelect{
+  margin-left: 0px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.controls{
+  margin-bottom: 10px;
+  margin-right: 0px;
+  display: block;
+}
+}

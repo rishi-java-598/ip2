@@ -1,0 +1,10 @@
+/* components/user/UserDashboard.module.css */
+.dashboard {
+  padding: 20px;
+}
+
+.statsGrid {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}

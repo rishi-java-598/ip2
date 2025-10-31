@@ -1,0 +1,27 @@
+/* components/user/RegistrationForm.module.css */
+.formContainer {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px;
+  background: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

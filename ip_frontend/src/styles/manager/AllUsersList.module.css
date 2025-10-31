@@ -1,0 +1,13 @@
+.container {
+  padding: 15px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.listItem {
+  background: #fffde7;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}

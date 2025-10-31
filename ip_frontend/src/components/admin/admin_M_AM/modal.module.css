@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.ids{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.si{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mkb{
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+
+}
+.bind{
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,267 @@
+/* Container replaces modalOverlay + modal */
+.container {
+  width: 90%;
+  /* max-width: 900px; */
+  margin: 40px auto;
+  background: #fff;
+  /* padding: 40px; */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f9fafb;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Filters */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.filters label {
+  display: block;
+  font-size: 0.75rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+.downloadWrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.downloadBtn {
+  width: 100%;
+  padding: 8px;
+  color: white;
+  background: black;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.downloadBtn:hover {
+  background: #222;
+}
+
+/* Records */
+.records {
+  flex: 1;
+  padding: 16px 24px;
+  background: #fff;
+}
+
+.loading,
+.noRecords {
+  text-align: center;
+  color: #666;
+  padding: 20px 0;
+}
+
+.recordCard {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  transition: background 0.2s, transform 0.2s;
+}
+.recordCard:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-top: 1px solid #eee;
+  background: #f8fafc;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pagination button:hover:not(:disabled) {
+  background: #f1f5f9;
+}
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Right-side summary */
+.summaryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.summaryBox {
+  background: linear-gradient(135deg, #b5179e, #7209b7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(183, 9, 183, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summaryBox:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.7);
+}
+
+.summaryBox h3 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.summaryBox p {
+  margin: 0;
+  font-size: 1rem;
+}
+/* Data Section */
+.dataSection {
+  margin: 40px auto;
+  width: 90%;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dataSection h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.dataBlock {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.dataBlock h4 {
+  margin-bottom: 10px;
+  color: #7209b7;
+}
+
+.dataBlock ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dataBlock li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.dataBlock li:last-child {
+  border-bottom: none;
+}
+
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .mc {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summaryContainer {
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .summaryBox {
+    flex: 1;
+  }
+}

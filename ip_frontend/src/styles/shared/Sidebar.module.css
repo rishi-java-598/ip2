@@ -1,0 +1,17 @@
+/* components/shared/Sidebar.module.css */
+.sidebar {
+  width: 200px;
+  background: #f5f5f5;
+  padding: 15px;
+  min-height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px 0;
+  cursor: pointer;
+}

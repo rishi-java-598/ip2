@@ -1,0 +1,11 @@
+/* components/shared/AttendanceTable.module.css */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
